@@ -1,9 +1,6 @@
 <?php
-    $_vEmployeeOne    = 'Lucas';
-    $_vEmployeeTwo    = 'Josué';
-    $_vEemployeeThree = 'Eduardo';
-   // $_vEmployees = array($_vEmployeeOne, $_vEmployeeTwo, $_vEemployeeThree);
-    $_vSalary = array(3290, 900, 6000);
+    $_vEmployees = array('Lucas', 'Josué', 'Eduardo');
+    $_vSalary    = array(3290, 900, 6000);
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +14,9 @@
 <body>
     <pre>
     <?php
-        print_r($_vEmployees[0] . $_vSalary[0]);
+        for($_i = 0; $_i <= 2; $_i++){
+        echo ($_vEmployees[$_i] . $_vSalary[$_i]);
+        }
     ?>
     </pre>
 </body>
